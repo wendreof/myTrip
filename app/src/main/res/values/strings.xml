@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MyTrip</string>
+    <string name="distance">Distância</string>
+    <string name="price">Preço</string>
+    <string name="autonomy">Autonomia</string>
+    <string name="calculate">Calcular</string>
 </resources>
