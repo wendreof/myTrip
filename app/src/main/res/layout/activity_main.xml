@@ -1,62 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="15dp"
+    android:background="@color/colorLightGray"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editDistance"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/round_et"
-        android:gravity="center"
-        android:hint="@string/distance"
-        android:textColor="@color/colorText"
-        android:textColorHint="@color/colorDarkGray" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editPrice"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/round_et"
-        android:gravity="center"
-        android:hint="@string/price"
-        android:textColor="@color/colorText"
-        android:textColorHint="@color/colorDarkGray" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimaryDark" />
 
-    <EditText
-        android:id="@+id/editAutonomy"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/round_et"
-        android:gravity="center"
-        android:hint="@string/autonomy"
-        android:textColor="@color/colorText"
-        android:textColorHint="@color/colorDarkGray" />
+        <EditText
+            android:id="@+id/editDistance"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_et"
+            android:gravity="center"
+            android:hint="@string/distance"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorDarkGray" />
 
-    <TextView
-        android:id="@+id/textResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="R$ Valor Final" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="@string/total_km"
+            android:textAllCaps="true"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="12sp" />
 
-    <Button
-        android:id="@+id/buttonCalculate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/calculate" />
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_et"
+            android:gravity="center"
+            android:hint="@string/price"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorDarkGray" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="Preço por litro"
+            android:textAllCaps="true"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="12sp" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/editAutonomy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_et"
+            android:gravity="center"
+            android:hint="@string/autonomy"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorDarkGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="Km's p/ litro"
+            android:textAllCaps="true"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="Seu gasto total será de:"
+            android:textAllCaps="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="R$ Valor Final"
+            android:textAllCaps="true"
+            android:textColor="#Fd6a6a"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/round_btn"
+            android:padding="20dp"
+            android:text="@string/calculate"
+            android:textAllCaps="true"
+            android:textColor="@color/colorLightGray"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</ScrollView>
